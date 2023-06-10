@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>METANIT.COM</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div id="message"></div>
+     <p>
+        Введите имя: <br />
+        <input name="username" id="username" />
+    </p>
+     <p>
+        Введите возраст: <br />
+        <input name="userage" id="userage" type="number" />
+    </p>
+    <button onclick="send()">Отправить</button>
+<script>
+    async function send(){
+
+        // получаем введеные в поля имя и возраст
+        const username = document.getElementById("username").value;
+        const userage = document.getElementById("userage").value;
+
+        // отправляем запрос
+        const response = await fetch("/hello", {
+    method: "POST",
+    headers: { "Accept": "application/json", "Content-Type": "application/json" },
+    body: JSON.stringify({
+        name: "Tom",
+        languages: ["Python", "JavaScript"]
+    })
+});
+const data = await response.json();
+console.log(data);      // {message: "Name: Tom. Languages: ['Python', 'JavaScript']"}
+    }
+</script>
+</body>
+</html>

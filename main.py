@@ -1,12 +1,16 @@
+from datetime import datetime
 from typing import List
-from fastapi import FastAPI, Response, Path, Query, status, Body
+from fastapi import FastAPI, Response, Path, Query, status, Body, Form
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse, FileResponse
+from pydantic import BaseModel, Field
 from starlette.responses import RedirectResponse
 from starlette.staticfiles import StaticFiles
+from simple_API import router as SimpleAPI
 
 app = FastAPI(docs_url="/",
               title="Title")
+app.include_router(SimpleAPI)
 
 
 @app.get("/api")
@@ -413,3 +417,84 @@ async def hello(data=Body()):
     name = data["name"]
     age = data["age"]
     return {"message": f"{name}, ваш возраст - {age}"}
+
+
+# ---------------------------------------------------------------- Получения данных запроса в виде класа ----------------------------------------------------------------
+
+# class Person(BaseModel):
+#     name: str #= Field(default="dalbayob", min_length=3, max_length=20)
+#     age: int #= Field(default=18, ge=18, lt=111)
+#     languages: list = ["Java", "Python", "JavaScript"] #= Field(default)
+
+
+class Company(BaseModel):
+    name: str
+
+
+class Person(BaseModel):
+    name: str
+    company: Company
+
+
+@app.get("/class-request")
+async def class_request():
+    return FileResponse("template/index2.html")
+
+
+@app.post("/class-request")
+async def class_Request_Post(person: Person):#person: Person):
+    # if person.age == None:
+    #     return {"message": f"{person.name} ты чорт "}
+    # return {"message": f"Привет ,{person.name} , тебе точно {person.age}"}
+    return {"message": f"Name: {person.name}. Company: {person.company.name}"}
+
+
+# ---------------------------------------------------------------- Headers ----------------------------------------------------------------
+
+@app.get("/api/headers")
+async def get_headers():
+    data = "Hello world"
+    return Response(content=data ,media_type="text/plain",headers={"Secret-key":"123-324-12"})
+
+# ---------------------------------------------------------------- Cookie ----------------------------------------------------------------
+
+"""
+Для установки куки на сервере у объекта Response и его классов-наследников применяется метод set_cookie(). Этот метод принимает ряд параметров:
+
+        key: ключ или имя куки. Обязательный параметр
+
+        value: значение куки, значение по умолчанию - пустая строка
+
+        max_age: максимальное время жизни куки в секундах. Это может быть либо число, либо значение None (ограничивает время жизни куки текущей сессией браузера, является значением по умолчанию).
+
+        expires: когда истекает действие куки. Это может быть либо число, либо значение None (ограничивает время жизни куки текущей сессией браузера, является значением по умолчанию).
+
+        path: путь, для которого устанавливаются куки. Значение по умолчанию - корень веб-приложения "/"
+
+        domain: домен, к которому применяются куки. значение по умолчанию None
+
+        secure: устанавливает используемый протокол. Так, если имеет значение True, то куки будут посылаться на сервер только в запросе по протоколу https. Значение по умолчанию False
+
+        httponly: устанавлиет доступность для скриптов javascript на клиенте. Так, значение True предотвращает доступ к куки из кода javascript на клиенте. Значение по умолчанию False
+
+        samesite: устанавливает разрешения на отправку куки в кроссдоменных запросах. Так, значение lax (значение по умолчанию) указывают браузеру не посылать куки в кроссдоменных запросах.
+        
+    """
+
+@app.get("/api/cookie")
+async def get_cookie(response:Response):
+    now = datetime.now()
+    response.set_cookie(key="last_visit", value=now)
+    return {"massage": "sat the cookie"}
+
+# ---------------------------------------------------------------- Form Send ----------------------------------------------------------------
+
+
+@app.get("/api/form-send")
+async def form_send():
+    return FileResponse("template/index4.html")
+
+
+@app.post("/api/postdata")
+async def postdata(username: str = Form(), userage: int = Form()):
+    return {"name": username, "age": userage}
