@@ -6,12 +6,15 @@ from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse, Fil
 from pydantic import BaseModel, Field
 from starlette.responses import RedirectResponse
 from starlette.staticfiles import StaticFiles
+
+from DataBase import engine, Base
 from simple_API import router as SimpleAPI
 
 app = FastAPI(docs_url="/",
               title="Title")
 app.include_router(SimpleAPI)
 
+Base.metadata.create_all(bind=engine)
 
 @app.get("/api")
 async def root():
@@ -498,3 +501,9 @@ async def form_send():
 @app.post("/api/postdata")
 async def postdata(username: str = Form(), userage: int = Form()):
     return {"name": username, "age": userage}
+
+# ---------------------------------------------------------------- Complate FastAPI TUtorial ----------------------------------------------------------------
+# ---------------------------------------------------------------- Complate FastAPI TUtorial ----------------------------------------------------------------
+# ---------------------------------------------------------------- Complate FastAPI TUtorial ----------------------------------------------------------------
+
+
