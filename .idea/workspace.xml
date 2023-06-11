@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b65fdad9-d9c5-4c5a-972f-2226532787e9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/GPT_task/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/DB.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/auth/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/core/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/crud/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/crud/base_crud.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/models/base_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/models/users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/schemas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/schemas/user_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/migrate/versions/e7463d4ba3b2_add_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Python_Petproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python_Petproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple_API.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_app.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Rasul Abduvaitov.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/index3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/index4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QacLWNRzCwOSTmJ3NTpReOa5SA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/home/rasulabduvaitov/Desktop/Python_Petproject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/template" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Python_Petproject/template/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="activate" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="activate" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="run" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_Petproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GPT_task" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GPT_task/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Python_Petproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Makefile Target.run" />
+        <item itemvalue="Makefile Target.activate" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b65fdad9-d9c5-4c5a-972f-2226532787e9" name="Changes" comment="" />
+      <created>1685595077000</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685595077000</updated>
+      <workItem from="1685595078062" duration="624000" />
+      <workItem from="1685799461188" duration="1722000" />
+      <workItem from="1685803242843" duration="594000" />
+      <workItem from="1685862112306" duration="5290000" />
+      <workItem from="1685961549144" duration="629000" />
+      <workItem from="1686033090211" duration="4561000" />
+      <workItem from="1686108687810" duration="2097000" />
+      <workItem from="1686110905936" duration="11425000" />
+      <workItem from="1686134267990" duration="3190000" />
+      <workItem from="1686285894480" duration="687000" />
+      <workItem from="1686309145684" duration="3701000" />
+      <workItem from="1686358757242" duration="9828000" />
+      <workItem from="1686446709228" duration="6974000" />
+      <workItem from="1686457366830" duration="2748000" />
+      <workItem from="1686461059494" duration="9617000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Python_Petproject$update_with_csv__3_.coverage" NAME="update_with_csv (3) Coverage Results" MODIFIED="1685800091569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/Python_Petproject$main.coverage" NAME="main Coverage Results" MODIFIED="1685875704131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Petproject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1686449095596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GPT_task" />
+  </component>
+</project>
