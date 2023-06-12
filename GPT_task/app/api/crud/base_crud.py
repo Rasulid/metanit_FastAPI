@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
 from starlette.responses import JSONResponse
 
-from ..auth.auth import password_hash, get_current_user
+from ..auth.auth import password_hash, get_current_admin, get_current_user
 from ..models.users import Users_Table
 from ..schemas.user_schema import UserUpdate, UserCreate
 from app.DB import SessionLocal
@@ -51,15 +51,18 @@ async def register_user(user: UserCreate,
 
 @router.get("/list")
 async def list_users(db: Session = Depends(get_db),
-                     login: dict = Depends(get_current_user)):
+                     login: dict = Depends(get_current_admin)):
     res = db.query(Users_Table).all()
     return res
 
 
 @router.put("/update")
 async def updata_user(user: UserUpdate,
-                      id: int,
-                      db: Session = Depends(get_db)):
+                      # id: int,
+                      db: Session = Depends(get_db),
+                      login: dict = Depends(get_current_user)):
+    id = login.get("user_id")
+
     res = db.query(Users_Table).filter(Users_Table.id == id).first()
 
     res.name = user.name
@@ -76,8 +79,32 @@ async def updata_user(user: UserUpdate,
 
 
 @router.delete("/delete")
+async def delete_user(db: Session = Depends(get_db),
+                      login: dict = Depends(get_current_user)):
+    id = login.get("user_id")
+
+    chack = db.query(Users_Table).filter(Users_Table.id == id).first()
+
+    if not chack:
+        return JSONResponse(status_code=status.HTTP_404_NOT_FOUND,
+                            content={"message": "User Not Found"})
+
+    res = db.query(Users_Table).filter(Users_Table.id == id).delete()
+
+    db.commit()
+
+    return JSONResponse(
+        status_code=status.HTTP_204_NO_CONTENT,
+        content={"message": "User deleted successfully"}
+    )
+
+
+@router.delete("/delete/admin")
 async def delete_user(id: int,
-                      db: Session = Depends(get_db)):
+                      db: Session = Depends(get_db),
+                      login: dict = Depends(get_current_admin)):
+    # id = login.get("user_id")
+
     chack = db.query(Users_Table).filter(Users_Table.id == id).first()
 
     if not chack:

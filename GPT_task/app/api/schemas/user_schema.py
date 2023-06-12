@@ -2,11 +2,6 @@ from pydantic import BaseModel
 import uuid
 from fastapi_users import schemas
 
-# class User(BaseModel):
-#     name: str
-#     age: int
-#     email: str
-
 
 class UserRead(schemas.BaseUser[uuid.UUID]):
     age: int

@@ -84,7 +84,7 @@ def create_refresh_token(
     return jwt.encode(encode, SECRET_KEY, ALGORITHM)
 
 
-async def get_current_user(token: str = Depends(oauth2_bearer),
+async def get_current_admin(token: str = Depends(oauth2_bearer),
                            db: Session = Depends(get_db)):
     pyload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
 
@@ -101,19 +101,40 @@ async def get_current_user(token: str = Depends(oauth2_bearer),
     if is_super == False:
         raise for_user_exception()
 
+    if email is None or user_id is None:
+        raise get_user_exceptions()
+
+    return {"sub": email, "user_id": user_id}
+
+
+async def get_current_user(token: str = Depends(oauth2_bearer),
+                           db: Session = Depends(get_db)):
+    pyload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+
+    email: str = pyload.get("username")
+    user_id: int = pyload.get("id")
+
+    res = db.query(Users_Table).filter(Users_Table.email == email).first()
+
+    if res is None:
+        raise for_user_exception()
+
+    # is_super = res.is_superuser
+    #
+    # if is_super == False:
+    #     raise for_user_exception()
 
     if email is None or user_id is None:
         raise get_user_exceptions()
 
-
-
     return {"sub": email, "user_id": user_id}
+
 
 
 @router.post("/create_admin")
 async def create_admin(user: UserCreate,
                        db: Session = Depends(get_db),
-                       login: dict = Depends(get_current_user)):
+                       login: dict = Depends(get_current_admin)):
 
     if login is None:
         return get_user_exceptions()
@@ -184,7 +205,7 @@ async def refresh_token(refresh_token: str):
 
 @router.get("/users")
 async def user_list(db: Session = Depends(get_db),
-                    user: dict = Depends(get_current_user)):
+                    user: dict = Depends(get_current_admin)):
     if user is None:
         raise get_user_exceptions()
 
