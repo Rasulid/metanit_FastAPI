@@ -5,40 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65fdad9-d9c5-4c5a-972f-2226532787e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GPT_task/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/DB.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/auth/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/core/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/crud/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/crud/base_crud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/models/base_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/models/users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/schemas/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/api/schemas/user_schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPT_task/app/migrate/versions/e7463d4ba3b2_add_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python_Petproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python_Petproject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple_API.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_app.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Rasul Abduvaitov.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GPT_task/app/docker/app.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +19,7 @@
       <list>
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -74,7 +44,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/home/rasulabduvaitov/Desktop/Python_Petproject",
+    "last_opened_file_path": "/home/rasulabduvaitov/Desktop/MarketPlace",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,6 +61,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/GPT_task/app" />
+      <recent name="$PROJECT_DIR$/GPT_task/app/api" />
       <recent name="$PROJECT_DIR$/template" />
     </key>
   </component>
@@ -185,7 +157,9 @@
       <workItem from="1686358757242" duration="9828000" />
       <workItem from="1686446709228" duration="6974000" />
       <workItem from="1686457366830" duration="2748000" />
-      <workItem from="1686461059494" duration="9617000" />
+      <workItem from="1686461059494" duration="9644000" />
+      <workItem from="1686483213716" duration="2244000" />
+      <workItem from="1686528754509" duration="7311000" />
     </task>
     <servers />
   </component>
